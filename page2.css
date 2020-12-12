@@ -1,0 +1,133 @@
+.head{
+    background-color: blueviolet;
+    height:80px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.profilebtn{
+    outline: none;
+    margin-top: 8px;
+    margin-left: 8px;
+    background-color: rgb(171, 98, 240);
+    border-radius: 55px;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+}
+.closebtn{
+    background-color:blueviolet ;
+    color: white;
+    margin-top: 18px;
+    margin-left: 148px;
+    outline: none;
+    border-radius: 30px;
+}
+
+@media screen and (max-height:450px){
+    .sidenav{padding-top: 50px;}
+    .sidenav a{font-size:20px;    }
+}
+
+.sidenav{
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    background-color:rgb(221, 194, 247);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+
+.sidenav a:hover{
+    color:rgb(171, 98, 240);
+}
+
+.sidenav a{
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(171, 98, 240);
+    display: block;
+    transition: 0.3s;
+}
+.navbtn:hover{
+    color: white;
+    background-color: rgb(171, 98, 240);
+}
+.navbtn{
+    color: blueviolet;
+    background-color:rgb(210, 174, 243);
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    outline: none;
+    border:none;
+}
+.spabtn{
+    height:150px;
+    width: 70%;
+    background-color:#fff057;
+    border-radius: 30px;
+    margin: 10px;
+    
+}
+
+body{
+    background-color: #ffffb3;
+}
+
+#text-head{
+    font-size: 35px;
+    font-style: bold;
+    margin-left: 15px;
+    color: rgb(56, 3, 109);
+}
+
+.spa-container{
+    margin-left: 20%;
+}
+
+#sname{
+    /* float: left; */
+    padding-top: 10px;
+    margin:0px;
+    padding-left: 15px;
+}
+#saddress{
+    padding-left: 15px;
+    margin: 0px;
+    color: rgba(43, 42, 42, 0.877);
+}
+#sratings{
+    padding-left: 15px;
+    margin-top:9px;
+}
+#img1{
+    float:right;
+    border-bottom-right-radius:30px ;
+    border-top-right-radius: 30px;
+    height:150px;
+    width: 260px;
+    display: inline-block;
+}
+#goto-spa{
+    float:right;
+    background-color: blueviolet;
+    color: white;
+    outline: none;
+    border: 0px;
+}
+#goto-spa:hover{
+    background-color:rgb(235, 199, 39) ;
+    color:blueviolet;
+    outline: none;
+    border: 0px;
+}
+#star{
+    background-color: blueviolet;
+    color: #fff057;
+    size:10px;
+}
+
