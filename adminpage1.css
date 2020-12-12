@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(216, 184, 247);
+}
+h1{
+    color: blueviolet;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    margin: 0px;
+    font-size: 25px;
+}
+button{
+    background-color: blueviolet;
+    color:white;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type=text]{
+    width:100%;
+    padding:12px 20px;
+    display:block;
+    border :1px solid;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+input{
+    outline: none;
+}
+
+input[type=submit]{
+    width:100%;
+    background-color: aliceblue;
+    color:black;
+    padding:14px 20px;
+    border:none;
+    cursor:pointer;
+}
+
+.form-popup{  
+    height: 90%;
+    width:80%; 
+    margin:auto 10% auto 10%;
+    display: none;
+    position: fixed;
+    z-index:1;
+}
+
+.form-container{
+    height:80%;
+    margin:auto 30% auto 30%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 25px;
+    outline: none;
+    overflow:scroll;
+}
+
+.animate{
+    -webkit-animation: animatezoom 0.8s;
+    animation: animatezoom 0.8s;
+}
+
+@-webkit-keyframes animatezoom{
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom{
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}
+
+.cancel{
+    float:right;
+    background-color: aliceblue;
+    outline:none;
+    border:0px;
+    cursor: pointer;
+}
+
+button.back{
+    float:right;
+}
+label{
+    font:20px bold;
+}
