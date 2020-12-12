@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="adminpage1.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <button class="back"><i class="material-icons">arrow_back</i></button>
+        <h1>Welcome Lavanya C!!</h1>
+
+        <button id="addSpa" onclick="openForm()">Add Spa</button>
+
+        <div class="form-popup" id="addDetails">
+            <form action="page1.html" class="form-container animate">
+                <span class="cancel" onclick="document.getElementById('addDetails').style.display='none'">
+                    <i class="material-icons">close</i></span><br>
+                <h2>New Spa</h2>
+                <label for="spname">Shop Name</label>
+                <input type="text" id="spname" name="shopname" placeholder="Shop Name">
+                <label for="spaddress">Location</label>
+                <input type="text" id="spaddress" name="shopaddress" placeholder="Shop address">
+                <label for="splicense">License Number</label>
+                <input type="text" id="splicense" name="shoplicense" placeholder="Shop License Number">
+                <label for="spnumber">Shop Contact Number</label>
+                <input type="text" id="spnumber" name="shopumber" placeholder="Shop Contact Number">
+                <label for="spmail">Shop Mail Id</label>
+                <input type="text" id="spmail" name="shopmail" placeholder="Shop Mail Id">
+                <label for="spOname">Owner Name</label>
+                <input type="text" id="spOname" name="shopOname" placeholder="Shop Owner Name">
+                <label for="spOnumber">Owner Contact Number</label>
+                <input type="text" id="spOnumber" name="shopOnumber" placeholder="Shop Owner Contact Number">
+                <label for="spOmail">Owner Mail Id</label>
+                <input type="text" id="spOmail" name="shopOmailr" placeholder="Shop Contact Number">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <button id="delSpa">Delete Spa</button>
+        <button id="updateAdmin">Update Admin</button>
+        <script>
+            function openForm(){
+                document.getElementById("addDetails").style.display="block";
+            }
+            function closeForm(){
+                document.getElementById("addDetails").style.display="none";
+            }
+        </script>
+    </body>
+</html>
