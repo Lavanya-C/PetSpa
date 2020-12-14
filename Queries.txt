@@ -1,0 +1,46 @@
+create TABLE admin(admin_id int PRIMARY KEY AUTO_INCREMENT,
+                  name varchar,
+                  email varchar UNIQUE,
+                  password varchar,
+                  contact int)AUTO_INCREMENT=101;
+
+CREATE TABLE `petspa`.`admin` ( `admin_id` INT(3) NOT NULL ,
+ `name` VARCHAR(25) NOT NULL ,
+ `email` VARCHAR(25) NOT NULL ,
+ `password` VARCHAR(20) NOT NULL ,
+ `contact` INT(10) NOT NULL ,
+ PRIMARY KEY (`admin_id`(3)),
+ UNIQUE `email` (`email`));
+
+
+CREATE TABLE `shops` ( `shop_id` INT(4) PRIMARY KEY AUTO_INCREMENT ,
+ `shop_name` VARCHAR(25) NOT NULL ,
+ `shop_address` VARCHAR(50) NOT NULL ,
+ `shop_license` VARCHAR(30) NOT NULL ,
+ `shop_contact` INT(10) NOT NULL ,
+ `shop_email` VARCHAR(20) NOT NULL ,
+ `password` VARCHAR(20) NOT NULL ,
+ `owner_name` VARCHAR(25) NOT NULL ,
+ `owner_contact` INT(10) NOT NULL ,
+ `start_time` TIME NOT NULL ,
+ `end_time` TIME NOT NULL ,
+ `date` DATE NOT NULL DEFAULT CURRENT_DATE())AUTO_INCREMENT=2000;
+
+CREATE TABLE `customer` ( `customer_id` INT(4) PRIMARY KEY AUTO_INCREMENT ,
+ `cust_name` VARCHAR(25) NOT NULL ,
+ `cust_email` VARCHAR(30) UNIQUE ,
+ `cust_address` VARCHAR(50) NOT NULL ,
+ `cust_contact` INT(10) NOT NULL ,
+ `password` VARCHAR(20) NOT NULL ,
+ `DOB` DATE NOT NULL,
+`Date` DATE NOT NULL DEFAULT CURRENT_DATE()) AUTO_INCREMENT=3000;
+
+CREATE TABLE `pets` ( `pet_id` INT(4) PRIMARY KEY AUTO_INCREMENT ,
+ `pet_name` VARCHAR(25) NOT NULL ,
+ `gender` VARCHAR(10) NOT NULL ,
+ `DOB` DATE NOT NULL ,
+ `pet_breed` VARCHAR(20) NOT NULL ,
+ `age` integer(3) NOT NULL ,
+ `cust_id` integer(4) NOT NULL ,
+ `date` DATE NOT NULL DEFAULT CURRENT_DATE(),
+CONSTRAINT pcust_id FOREIGN KEY(cust_id) REFERENCES customer(customer_id))AUTO_INCREMENT=5000;

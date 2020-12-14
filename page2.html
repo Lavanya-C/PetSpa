@@ -16,7 +16,7 @@
                     <h2 id="sname">Pet Jingle</h2>
                     <p id="saddress">hjgjhkhjkg</p>
                     <p id="sratings" style="font-size: 20px;"><i class="material-icons" id="star">star</i>9/10</p>
-                    <button id="goto-spa"><i class="material-icons">pets</i></button>
+                    <button id="goto-spa" onclick="document.getElementById('popShop')"><i class="material-icons">pets</i></button>
                 </article>
                 <article class="spabtn">
                     <img id ="img1" src="C:\xampp\htdocs\PetSpa\Code\images\dog1.png">
@@ -42,8 +42,15 @@
                 </div>
             </div>
 
-        <div id="popShop" class="popShop">
-            
+        <div id="popShop" class="pop1">
+            <form class="pop1-form animate" action="#">
+                <span onclick="document.getElementById('popShop').style.display='none'"><i class="material-icons">close</i></span>
+                <div class="row">
+                    <div class="column"></div>
+                    <div class="column"></div>
+                </div>
+
+            </form>
         </div>
 
         <div id="SideNav" class="sidenav" >
@@ -57,8 +64,7 @@
             function closeNav() {
                     document.getElementById("SideNav").style.width="0px";}
             function openShop() {
-
-            }
+                    document.getElementById("popShop").style.display="block";}
         </script>
     </body>
 

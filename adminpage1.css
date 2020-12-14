@@ -21,26 +21,26 @@ button{
     cursor: pointer;
 }
 
-input[type=text]{
+/* input[type=password]{
     width:100%;
     padding:12px 20px;
     display:block;
     border :1px solid;
     border-radius: 25px;
     box-sizing: border-box;
-}
-input{
-    outline: none;
-}
+} */
 
-input[type=submit]{
+/* input{
+    outline: none;
+} */
+
+/* input[type=submit]{
     width:100%;
     background-color: aliceblue;
-    color:black;
     padding:14px 20px;
     border:none;
     cursor:pointer;
-}
+} */
 
 .form-popup{  
     height: 90%;
@@ -76,13 +76,13 @@ input[type=submit]{
     to{transform: scale(1)}
 }
 
-.cancel{
+/* .cancel{
     float:right;
-    background-color: aliceblue;
+    background-color:red;
     outline:none;
     border:0px;
     cursor: pointer;
-}
+} */
 
 button.back{
     float:right;

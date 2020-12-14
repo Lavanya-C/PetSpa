@@ -71,7 +71,6 @@
     background-color:#fff057;
     border-radius: 30px;
     margin: 10px;
-    
 }
 
 body{
@@ -131,3 +130,39 @@ body{
     size:10px;
 }
 
+.pop1{
+    display:none;
+    position:fixed;
+    height:400px;
+    width:500px;
+    z-index:1;
+}
+.pop1-form{
+    margin:5% 8% auto 10%;
+    background-color: blue;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.3s;
+    animation: animatezoom 0.3s;
+  }
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+ }
+
+.row{
+    display:block;
+    height:300px;
+    width:400px;
+    background-color: aquamarine;
+}
+.column{
+    background-color:red;
+}
