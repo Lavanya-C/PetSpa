@@ -8,7 +8,7 @@ h1{
 h2{
     text-align: center;
     margin: 0px;
-    font-size: 25px;
+    font-size: 35px;
 }
 button{
     background-color: blueviolet;
@@ -21,26 +21,16 @@ button{
     cursor: pointer;
 }
 
-/* input[type=password]{
+input{
+    font-size: 20px;
     width:100%;
-    padding:12px 20px;
+    padding:8px 10px;
     display:block;
     border :1px solid;
     border-radius: 25px;
     box-sizing: border-box;
-} */
-
-/* input{
     outline: none;
-} */
-
-/* input[type=submit]{
-    width:100%;
-    background-color: aliceblue;
-    padding:14px 20px;
-    border:none;
-    cursor:pointer;
-} */
+}
 
 .form-popup{  
     height: 90%;
@@ -76,17 +66,26 @@ button{
     to{transform: scale(1)}
 }
 
-/* .cancel{
+.cancel{
     float:right;
-    background-color:red;
+    color:black;
     outline:none;
     border:0px;
     cursor: pointer;
-} */
+}
 
 button.back{
     float:right;
 }
 label{
     font:20px bold;
+}
+
+.form-popup2{  
+    height: auto;
+    width:80%; 
+    margin:auto 10% auto 10%;
+    display: none;
+    position: fixed;
+    z-index:1;
 }

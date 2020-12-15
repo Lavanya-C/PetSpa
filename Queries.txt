@@ -44,3 +44,12 @@ CREATE TABLE `pets` ( `pet_id` INT(4) PRIMARY KEY AUTO_INCREMENT ,
  `cust_id` integer(4) NOT NULL ,
  `date` DATE NOT NULL DEFAULT CURRENT_DATE(),
 CONSTRAINT pcust_id FOREIGN KEY(cust_id) REFERENCES customer(customer_id))AUTO_INCREMENT=5000;
+
+INSERT INTO `shops` (`shop_id`, `shop_name`,
+ `shop_address`, `shop_license`,
+ `shop_contact`, `shop_email`,
+ `passwords`, `owner_name`,
+ `owner_contact`,
+ `start_time`, `end_time`, `date`) 
+VALUES (NULL, 'dfghj', 'dfghjk', 'dfghjk', '45678', 'erty@rty',
+ 'rtyu', 'vhbjnkm', '33333', '2', '2', 'curdate()')
