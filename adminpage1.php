@@ -5,7 +5,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
-        <button class="back"><i class="material-icons">arrow_back</i></button>
+        <button class="back" onclick="page1.html"><i class="material-icons">arrow_back</i></button>
+
         <?php
         $conn=mysqli_connect("localhost","root","","petspa");
         if($conn->connect_error){
@@ -30,6 +31,7 @@
             <form action="addSpa.php" class="form-container animate" method="POST">
                 <span class="cancel" onclick="document.getElementById('addDetails').style.display='none'">
                     <i class="material-icons">close</i></span><br>
+
                 <h2>New Spa</h2>
                 <label for="spname">Shop Name</label>
                 <input type="text" id="spname" name="shop_name" placeholder="Shop Name" required><br>
