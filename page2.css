@@ -1,8 +1,10 @@
 .head{
+    color:white;
     background-color: blueviolet;
-    height:80px;
+    height:90px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    justify-content: center;
 }
 .profilebtn{
     outline: none;
@@ -99,7 +101,7 @@ body{
     margin: 0px;
     color: rgba(43, 42, 42, 0.877);
 }
-#sratings{
+#smail{
     padding-left: 15px;
     margin-top:9px;
 }
