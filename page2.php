@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <div class="head">
             <button class="profilebtn" onclick="openNav()"><i class="material-icons" style="font-size:55px">person</i></button>
-            <h1 id="text-head">Spa</h1>
+            <head id="text-head">Spa</head>
         </div>
     </head>
     <body>        
@@ -18,10 +18,9 @@
                 $result=$conn->query($sql);
                 if($result->num_rows>0){
                     while($row=$result->fetch_assoc()){
-                        // $path=$row["logo"];
                         echo "<article class='spabtn'><img id='img1' src=".$row["logo"].">
                         <h2 id=sname>".$row["shop_name"]."</h2><p id='saddress'>".$row["shop_address"]."</p>
-                        <p id='smail'>".$row["shop_email"]."</p><button id='goto-spa' onclick='document.getElementById('popShop')'><i class='material-icons'>pets</i></button></article><br>";
+                        <p id='smail'>".$row["shop_email"]."</p><p id='goto-spa' onclick='location.href=`spa.html`'><i style='font-size:32px' class='material-icons'>pets</i></p></article><br>";
                     }
                 }
                 else{

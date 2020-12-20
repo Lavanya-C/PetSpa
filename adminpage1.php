@@ -1,3 +1,9 @@
+<?php
+include_once 'conn.php';
+session_start();
+$email = $_SESSION['email'];
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,14 +11,10 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
-        <button class="back" onclick="page1.html"><i class="material-icons">arrow_back</i></button>
+        <button class="back" onclick="location.href='home.php'"><i class="material-icons">arrow_back</i></button>
 
         <?php
-        $conn=mysqli_connect("localhost","root","","petspa");
-        if($conn->connect_error){
-            die("Connection Failed:".$conn->connect_error);
-        }
-        $sql="Select name from admin where admin_id=101";
+        $sql="SELECT * from `admin` WHERE email='$email'";
         $result=$conn->query($sql);
         if($result->num_rows>0){
             while($row=$result->fetch_assoc()){
@@ -35,6 +37,7 @@
                 <h2>New Spa</h2>
                 <label for="spname">Shop Name</label>
                 <input type="text" id="spname" name="shop_name" placeholder="Shop Name" required><br>
+                
                 <label for="spaddress">Location</label>
                 <input type="text" id="spaddress" name="shop_address" placeholder="Shop address" required><br>
                 <label for="splicense">License Number</label>

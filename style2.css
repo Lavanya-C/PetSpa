@@ -1,0 +1,421 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(310deg, #df56e4 10%, #3f01ea 90%);
+    background-size: cover;
+    font-family: sans-serif;
+  }
+  .logo
+  {
+    color: rgba(0,0,0, 0.966);
+    background: -webkit-linear-gradient(60deg,#0a5252d7 10%, #085a46 90%);
+  }
+ .welcome h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+  
+  }
+/*.welcome{
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin: 2% 40%;
+}
+.welcome h1{
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: -webkit-linear-gradient(310deg, rgb(248, 248, 247), rgb(124, 3, 194));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}*/
+.imgslider{
+  width: 50%;
+  height: 410px;
+  position: relative;
+  left: 30%;
+  top: 40%;
+  transform: translate(-50%,-60%);
+  background-image: url(images/meow-cat.jpeg);
+  background-size: 100% 100%;
+  box-shadow: 1px 1.5px 5px 8px rgb(7, 7, 7);
+  animation: slider 20s infinite;
+}
+@keyframes slider{
+  0%{background-image: url(images/walk.png); }
+  33%{ background-image: url(images/dog1.png);}
+  69%{ background-image: url(images/excite.jpeg);}
+}
+.menu{
+  
+      background: rgb(0,0,0,0.0);
+      text-align:center;
+      float: right;
+  }
+.menu ul{
+  
+    display: inline-flex;
+    list-style: none;
+    color: #000;
+}
+.menu ul li{
+    margin:15px ;
+    padding: 9px;
+    width: 120px;
+    color: white;
+    text-decoration: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.menu ul li:hover{
+    background: black;
+    border-radius: 4px;
+}
+.submenu1{
+    display: none;
+}
+.menu ul li:hover .submenu1{
+    display: flex;
+    position: absolute;
+    background: rgb(0,0,0,0.1);
+    margin-top: 15px;
+    margin-left: -15px;   
+}
+.menu ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .submenu1 ul li{
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted #fff;
+background: transparent;
+border-radius: 2px;
+text-align: left;
+}
+.menu ul li:hover .submenu1 ul li:last-child{
+border-bottom: none;
+}
+.menu ul li:hover .submenu1 ul li a:hover{
+    color: tomato;
+}
+/*sign up css*/
+*{
+    margin: 0;
+    padding: 0;
+  }
+.body1{
+    background-position: center ;
+    font-family: sans-serif;
+    margin-top: 35px;
+}
+.register-form{
+  box-shadow: 0 0 20px rgba(235, 134, 226, 10.0);
+  width: 800px;
+  background-color: rgba(247, 232, 232, 0);
+  margin: auto;
+  color: #000;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+   border-radius: 5px 5px 0px 0px;
+  align-items: center;
+}
+.c1{
+  background-color: rgba(0,0,0,0.0);
+  width: 800px;
+  height: 610px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(235, 134, 226, 10.0);
+  padding: 10px 0px 10px 0px;
+}
+form{
+  padding: 30px 30px 30px 30px;
+}
+#name{
+  width: 100%;
+  height: 100px;
+  color: white;
+}
+.name{
+  margin-left: 25px;
+  margin-top: 15px;
+  width: 125px;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+}
+.fname{
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  height: 35px;
+}
+.lname{
+  position: relative;
+  left: 417px;
+  top: -76.5px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+  height: 35px;
+}
+.flabel{
+  position: relative;
+  color: black;
+  text-transform: capitalize;
+  font-size: 14px;
+  left: 203px;
+  top: -45px;
+}
+.llabel{
+  position: relative;
+  color: black;
+  text-transform: capitalize;
+  font-size: 14px;
+  left: 175px;
+  top: -45px;
+}
+.email{
+  position: relative;
+  left: 200px;
+  top: -35px;
+  line-height: 40px;
+  width: 250px;
+  height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+.number{
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 40px;
+  width: 250px;
+  height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+.address{
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 40px;
+  width: 250px;
+  height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+.password{
+  position: relative;
+  left: 200px;
+  top: -37px;
+  line-height: 40px;
+  width: 250px;
+  height: 35px;
+  border-radius: 6px;
+  padding: 0 22px;
+  font-size: 16px;
+  color: #555;
+}
+p{
+  text-align: center;
+  font-weight: bold;
+}
+.btn{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background: -webkit-linear-gradient(right, #bd2096, #a227db, #bd2096, #a227db);
+    transition: all 0.4s;
+  }
+.btn:hover .inner{
+    left: 0;
+  }
+   .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+ /* .show-btn{
+   
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    color:white;
+    cursor: pointer;
+    
+  }*/
+  .show-btn, .container{
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+  }
+ 
+  input[type="checkbox"]{
+    display: none;
+  }
+  .container{
+    position: absolute;
+    display: none;
+    width: 410px;
+   height: 485px;
+   padding: 25px;
+   
+    background:rgba(7, 7, 7, 0) ;
+    box-shadow: 0 0 20px rgba(235, 134, 226, 10.0);
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  #show:checked ~ .container{
+    display: block;
+  }
+  .container .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .container .close-btn:hover{
+    color: #e032c9;
+  }
+  .container .text{
+    color:white;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .container form{
+    margin-top: -20px;
+  }
+  .container form .data{
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+    text-align: left;
+  }
+  form .data label{
+    font-size: 18px;
+    color: white;
+  }
+  form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid rgb(177, 78, 155);
+  }
+  form .data input:focus{
+    border-color: #3498db;
+    border-bottom-width: 2px;
+  }
+  form .forgot-pass{
+    margin-top: -8px;
+    text-align: left;
+  }
+  form .forgot-pass a{
+    color: #3498db;
+    text-decoration: none;
+  }
+  form .forgot-pass a:hover{
+    text-decoration: underline;
+
+  }
+  form .btn{
+    margin: 30px 0;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    z-index: -1;
+    background: -webkit-linear-gradient(right, #bd2096, #a227db, #bd2096, #a227db);
+    transition: all 0.4s;
+  }
+  form .btn:hover .inner{
+    left: 0;
+  }
+  form .btn button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  /*select*/
+ 
+ 
+  .select {
+    position: relative;
+   
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: white;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+   #div1{
+     padding: 50px;
+   margin-top: 250px;
+   margin-bottom: 100px;
+   background: linear-gradient(rgba(241, 176, 101, 0.3),rgb(245, 7, 78));
+   border-radius: 8px;
+   }
+   #div2{
+    padding: 50px;
+  background: linear-gradient(rgb(243, 235, 235),rgb(0, 0, 0));
+  border-radius: 8px;
+  }
+  

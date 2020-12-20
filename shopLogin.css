@@ -1,0 +1,42 @@
+#page{
+    height:100%;
+    background-color: palevioletred;
+    padding:0px;
+    
+}
+#container{
+    height: auto;
+    width: 50%;
+    background-color: pink;
+    margin:5% 10% 5% 20%;
+    align-content: center;
+    padding: 5%;
+    border-radius: 30px;
+}
+#image1{
+    height:270px;
+    widows:270px;
+    border-radius: 30px;
+}
+p{
+    font: 20px bold ;
+}
+h1{
+    font:30px bold italic;
+}
+#edit{
+    width:50px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    outline:none;
+    cursor: pointer;
+}
+#cancel{
+    float:right;
+    background-color:palevioletred;
+    color:blueviolet;
+    border-radius: 30px;
+    outline:none;
+    cursor: pointer;
+}
