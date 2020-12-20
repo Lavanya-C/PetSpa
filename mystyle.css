@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: -webkit-linear-gradient(400deg, rgb(248, 248, 247), rgb(243, 82, 82));
+   /*background: linear-gradient(rgb(233, 171, 171),rgba(0,0,0));*/
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 36px;
+    line-height: 36px;
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+li{
+    float: right;
+    border-right: 1px solid #156ee2;
+}
+a{
+    display: block;
+    padding: 0px 28px;
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover, .active a{
+    background-color:darkcyan;
+}
+.logo{
+    text-align: center;
+    font-size: 15px;
+    margin: 2%;
+}
+.block{
+    margin-top: 7%;
+    margin-left: 5%;
+    width: 150px;
+    height:150px;
+    background-color:rgb(241, 55, 31) ;
+    border-radius: 50%;
+    display:inline-block;
+    line-height: 150px;
+    text-align:center;
+    font-weight: bold;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+    font-size: 20px;
+    font-family: cursive;
+    margin-right: 80px;
+}
+.body1{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: -webkit-linear-gradient(400deg, rgb(238, 238, 67), rgb(50, 76, 224));
+    font-family: sans-serif;
+}
+.menu{
+    width: 1200px;
+    height: auto;
+    margin:80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:10px ;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.menu .box{
+    position: relative;
+    background: #fff;
+    padding: 20px 40p 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.box{
+    padding: 50px;
+}
+.menu .box:nth-child(1){
+    background: linear-gradient(45deg,#f05a4f,#f4c030);
+}
+.menu .box:nth-child(2){
+    background: linear-gradient(45deg,#a91ee9,#ed55ff);
+}
+.menu .box:nth-child(3){
+    background: linear-gradient(45deg,#036eb7,#64eaff);
+}
+.menu .box h3{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: #fff;
+    z-index: 1;
+   
+    text-transform: uppercase;
+}
+.menu .box p{
+    margin: 0;
+    padding: 10px;
+    padding-top: 10px;
+    color: #000;
+    font-size: 18px;
+}
+.menu .box a:hover{
+    background-color: rgb(255, 255, 255);
+}
