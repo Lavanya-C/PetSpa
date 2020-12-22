@@ -11,13 +11,14 @@ if(isset($_POST['save']))
     $passwords = $_POST['passwords'];
     $owner_name = $_POST['owner_name'];
     $owner_contact = $_POST['owner_contact'];
+    $logo=$_POST['logo'];
     $start_time = $_POST['start_time'];
     $end_time = $_POST['end_time'];
     $rep_password = $_POST['rep_password'];
 
     if($rep_password==$passwords){
-        $hashed_password=password_hash($passwords,PASSWORD_DEFAULT);
-        $sql="INSERT INTO `shops` (shop_name, shop_address, shop_license, shop_contact, shop_email, passwords, owner_name, owner_contact, start_time, end_time) values ('$shop_name', '$shop_address', '$shop_license', '$shop_contact', '$shop_email', '$hashed_password', '$owner_name', '$owner_contact', '$start_time', '$end_time')";
+        $hashed_password=md5($passwords);
+        $sql="INSERT INTO `shops` (shop_name, shop_address, shop_license, shop_contact, shop_email, passwords, owner_name, owner_contact, start_time, end_time,logo) values ('$shop_name', '$shop_address', '$shop_license', '$shop_contact', '$shop_email', '$hashed_password', '$owner_name', '$owner_contact', '$start_time', '$end_time','$logo')";
 
     if (mysqli_query($conn, $sql)) {
         echo "<meta http-equiv='refresh' content='0;url=adminpage1.php'>";
@@ -27,6 +28,6 @@ if(isset($_POST['save']))
 	}
 	 mysqli_close($conn);
     }
-    else echo"error";
+    else echo"Passwords do not match..!!";
 }
 ?>

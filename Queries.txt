@@ -53,3 +53,11 @@ INSERT INTO `shops` (`shop_id`, `shop_name`,
  `start_time`, `end_time`, `date`) 
 VALUES (NULL, 'dfghj', 'dfghjk', 'dfghjk', '45678', 'erty@rty',
  'rtyu', 'vhbjnkm', '33333', '2', '2', 'curdate()')
+
+
+CREATE TABLE `shoptreat` ( `shop_id` INT(4) ,
+ `treat_id` INT(4) NOT NULL ,
+ `price` INT(5) NOT NULL,
+                          CONSTRAINT PRIMARY Key(shop_id,treat_id),
+CONSTRAINT tshop_id FOREIGN KEY(shop_id) REFERENCES shops(shop_id)on delete CASCADE,
+CONSTRAINT ttreat_id FOREIGN KEY(treat_id) REFERENCES treatlist(treat_id)on delete cascade);
