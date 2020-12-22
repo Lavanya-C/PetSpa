@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Homepage</title>
         <link rel="stylesheet" href="style2.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
     </head>
     <body> 
-        <div class="welcome">
-            <h1>pet spa</i></h1>
-        </div>
         <div class="menu">
         <ul>
-            <li><a href="#">Home</a></li>
+            <!-- <li><a href="#">Home</a></li> -->
             <li><a href="#div1">About us</a></li>
             <li><a href="#div2">Contact</a></li>
             <li>
                 <input type="checkbox" id="show">
-                <label for="show" class="show-btn">Login</label><i class="fas fa-sign-in-alt"></i>
+                <label for="show" style="font-size:20px" class="show-btn">Login</label><i style="font-size:20px" class="fas fa-sign-in-alt"></i>
                 
                 <div class="container">
                   <label for="show" class="close-btn fas fa-times" title="close"></label>
-
-
                   
-                  <div class="text">Login</div>
+                  <div class="text" style="color:blueviolet'" >Login</div>
                   <form action="login.php" method="POST">
                       <div class="data">
                          <label>User Type</label>
@@ -53,9 +48,6 @@
                     </form>
                    </div>
 
-
-
-
             </li>
             <li><a href="#" id="show1">Register  <i class="fas fa-user-plus"></i></a>
                 <div class="submenu1">
@@ -66,18 +58,28 @@
                 </div>
             </li>
         </ul>
+
         </div>
-        <div class="logo"><i class="fa fa-paw fa-4x" aria-hidden="true"></i></div>
+
+        <div class="logo"><i class="fa fa-paw fa-4x" style="font-style:italic" aria-hidden="true">    PET SPA</i></p></div>
         <div class="imgslider"></div>
-    <div id="div1" >
-        <p>
-            <h1>ABOUT US</h1>
-            sdhjsdsiudchkjdccboiedhjslcdnksjdcfbcbmnckjcbugbcdcb<br>auutveididosdjgywbaoiyepqpmjdguwgygddbn<br>msnbczbcnhcushcdshdu
-        </p>
-    </div>
-    <div id="div2">
-        <p><h1>Contact info</h1>
-            ajjhwhywwtiiouiwtiwevamicalskiehdiwyeopquqkbc  wygaeouhenbuurtiwournowndnksiuefh<br>gqilan dfbuegfiweourruyueyabdcbdhbb auen fukdhj fdkhj hidlukjz eihldkj</p>
-    </div>
+            <div id=div1>
+                <p>
+                <h1>About us</h1>
+                Worried About your pet..!!<br>Book a spa treatment Today for your pet.<br>We groom him the best.<br>We understand the pets better.
+                </p></div>
+            <div id=div2>
+                <p>
+                <h1>Contact us</h1>
+                Write to us at : aishwaryac21121999@gmail.com /  lavanyacnaik44@gmail.com <br>For further queries call :  9900520806 / 9108170247.<br>
+                <address>
+
+                <center><a href="mailto:aishwaryac21121999@gmail.com?subject=PetSpa" id="write"><i class="material-icons" style="font-size:50px">send</i></a>
+                <a href="mailto:lavanyacnaik44@gmail.com?subject=PetSpa Application Feedback" id="write"><i class="material-icons" style="font-size:50px">feedback</i></a></center>
+
+                </address>
+            </p></div>
+         
+        
     </body>
 </html>

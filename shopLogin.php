@@ -6,8 +6,6 @@
 
     </head>
     <body>
-    <p id="cancel" onclick="location.href='home.php'"><i style='font-size:40px'class="material-icons">cancel</i></p>
-
     <?php
         include_once 'conn.php';
         session_start();
@@ -17,7 +15,9 @@
         $res=$conn->query($sql);
         if($res->num_rows>0){
             while($row=$res->fetch_assoc()){
-                echo "<div id='page'><div id ='container'><center><img id='image1' src=".$row['logo'].">
+                echo "<div id='page'><div id ='container'>
+                <p id='cancel' onclick='location.href=`home.php`'><i style='font-size:35px' class='material-icons'>cancel</i></p>
+                <center><img id='image1' src=".$row['logo'].">
                 <h1 id='sname'>Shop Name : ".$row['shop_name']."</h1>
                 <p>License : ".$row['shop_license']."</p>
                 <p>Address : ".$row['shop_address']."</p>

@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(216, 184, 247);
+    background: -webkit-linear-gradient(400deg,rgb(53, 175, 4), rgb(24, 57, 240), rgb(34, 128, 236),rgb(238, 241, 55));
 }
 h1{
     color: blueviolet;
@@ -45,7 +45,7 @@ input{
     height:80%;
     margin:auto 30% auto 30%;
     border-radius: 10px;
-    background-color: aliceblue;
+    background: -webkit-linear-gradient(40deg,rgb(104, 14, 250), rgb(248, 248, 247), rgb(201, 8, 240),rgb(95, 80, 231));
     padding: 25px;
     outline: none;
     overflow:scroll;
@@ -83,7 +83,16 @@ label{
 
 .form-popup2{  
     height: auto;
-    width:80%; 
+    width:60%; 
+    margin:auto 10% auto 10%;
+    display: none;
+    position: fixed;
+    z-index:1;
+}
+
+.form-popup3{  
+    height: auto;
+    width:60%; 
     margin:auto 10% auto 10%;
     display: none;
     position: fixed;

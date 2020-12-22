@@ -1,3 +1,8 @@
+<?php
+include_once 'conn.php';
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +14,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <div class="logo"><i class="fa fa-paw fa-2x" aria-hidden="true"></i><h2>Welcome! Jingles Pet</h2></div>
+       
+    <!-- <div class="logo"><i class="fa fa-paw fa-2x" aria-hidden="true"></i><h2>Welcome! Jingles Pet</h2></div> -->
     <ul>
         <li><a href="home.html">Logout</a></li>
        <li><a href="">Profile edit <i class="fas fa-edit"></a></i></li>

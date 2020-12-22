@@ -6,23 +6,27 @@
 body{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(310deg, #df56e4 10%, #3f01ea 90%);
+    background: -webkit-linear-gradient(310deg, #df56e4,pink, #3f01ea , rgb(236, 143, 224));
     background-size: cover;
     font-family: sans-serif;
+    background-repeat:no-repeat;
   }
   .logo
   {
-    color: rgba(0,0,0, 0.966);
-    background: -webkit-linear-gradient(60deg,#0a5252d7 10%, #085a46 90%);
+    padding: 2px;
+    color:white;
+    height:85px;
+    font: 30px;
+    background: -webkit-linear-gradient(60deg,#b312f3d7 10%, #2395f1 90%);
   }
- .welcome h1{
+ /* .welcome h1{
     font-size: 55px;
     text-transform: uppercase;
     font-style: italic;
     text-align: center;
     margin-top: 10px;
   
-  }
+  } */
 /*.welcome{
   position: absolute;
   width: 600px;
@@ -44,15 +48,15 @@ body{
   left: 30%;
   top: 40%;
   transform: translate(-50%,-60%);
-  background-image: url(images/meow-cat.jpeg);
+  background-image: url(images/excite.jpeg);
   background-size: 100% 100%;
   box-shadow: 1px 1.5px 5px 8px rgb(7, 7, 7);
   animation: slider 20s infinite;
 }
 @keyframes slider{
-  0%{background-image: url(images/walk.png); }
-  33%{ background-image: url(images/dog1.png);}
-  69%{ background-image: url(images/excite.jpeg);}
+  0%{background-image: url(images/travel.png); }
+  33%{ background-image: url(images/bath.jpg);}
+  69%{ background-image: url(images/walk.png);}
 }
 .menu{
   
@@ -69,17 +73,17 @@ body{
 .menu ul li{
     margin:15px ;
     padding: 9px;
-    width: 120px;
+    width: 150px;
     color: white;
     text-decoration: none;
 }
 .menu ul li a{
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
 }
 .menu ul li:hover{
-    background: black;
+    background: rgb(128, 124, 124);
     border-radius: 4px;
 }
 .submenu1{
@@ -108,7 +112,7 @@ text-align: left;
 border-bottom: none;
 }
 .menu ul li:hover .submenu1 ul li a:hover{
-    color: tomato;
+    color:white;
 }
 /*sign up css*/
 *{
@@ -120,25 +124,16 @@ border-bottom: none;
     font-family: sans-serif;
     margin-top: 35px;
 }
-.register-form{
-  box-shadow: 0 0 20px rgba(235, 134, 226, 10.0);
-  width: 800px;
-  background-color: rgba(247, 232, 232, 0);
-  margin: auto;
-  color: #000;
-  text-align: center;
-  padding: 10px 0px 10px 0px;
-   border-radius: 5px 5px 0px 0px;
-  align-items: center;
-}
+
 .c1{
+  text-align: center;
   background-color: rgba(0,0,0,0.0);
   width: 800px;
   height: 610px;
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(235, 134, 226, 10.0);
-  padding: 10px 0px 10px 0px;
+  padding: 20px 20px 20px 20px;
 }
 form{
   padding: 30px 30px 30px 30px;
@@ -148,10 +143,10 @@ form{
   height: 100px;
   color: white;
 }
-.name{
+/* .name{
   margin-left: 25px;
   margin-top: 15px;
-  width: 125px;
+   width: 125px;
   color: black;
   font-size: 18px;
   font-weight: 700;
@@ -159,40 +154,15 @@ form{
 .fname{
   position: relative;
   left: 200px;
-  top: -37px;
+  top: 20px;
   line-height: 40px;
   border-radius: 6px;
-  padding: 0 22px;
+  padding: 0 35px;
   font-size: 16px;
   height: 35px;
+  outline: none;
 }
-.lname{
-  position: relative;
-  left: 417px;
-  top: -76.5px;
-  line-height: 40px;
-  border-radius: 6px;
-  padding: 0 22px;
-  font-size: 16px;
-  color: #555;
-  height: 35px;
-}
-.flabel{
-  position: relative;
-  color: black;
-  text-transform: capitalize;
-  font-size: 14px;
-  left: 203px;
-  top: -45px;
-}
-.llabel{
-  position: relative;
-  color: black;
-  text-transform: capitalize;
-  font-size: 14px;
-  left: 175px;
-  top: -45px;
-}
+
 .email{
   position: relative;
   left: 200px;
@@ -201,9 +171,10 @@ form{
   width: 250px;
   height: 35px;
   border-radius: 6px;
-  padding: 0 22px;
+  padding: 0 35px;
   font-size: 16px;
   color: #555;
+  outline: none;
 }
 .number{
   position: relative;
@@ -213,9 +184,10 @@ form{
   width: 250px;
   height: 35px;
   border-radius: 6px;
-  padding: 0 22px;
+  padding: 0 35px;
   font-size: 16px;
   color: #555;
+  outline:none
 }
 .address{
   position: relative;
@@ -225,11 +197,12 @@ form{
   width: 250px;
   height: 35px;
   border-radius: 6px;
-  padding: 0 22px;
+  padding: 0 35px;
   font-size: 16px;
   color: #555;
+  outline:none
 }
-.password{
+.passwords{
   position: relative;
   left: 200px;
   top: -37px;
@@ -237,10 +210,11 @@ form{
   width: 250px;
   height: 35px;
   border-radius: 6px;
-  padding: 0 22px;
+  padding: 0 35px;
   font-size: 16px;
   color: #555;
-}
+  outline:none
+} */
 p{
   text-align: center;
   font-weight: bold;
@@ -397,8 +371,7 @@ p{
  
  
   .select {
-    position: relative;
-   
+    position: relative;   
     width: 20em;
     height: 3em;
     line-height: 3;
@@ -406,16 +379,28 @@ p{
     overflow: hidden;
     border-radius: .25em;
   }
-   #div1{
-     padding: 50px;
-   margin-top: 250px;
-   margin-bottom: 100px;
-   background: linear-gradient(rgba(241, 176, 101, 0.3),rgb(245, 7, 78));
-   border-radius: 8px;
-   }
-   #div2{
-    padding: 50px;
-  background: linear-gradient(rgb(243, 235, 235),rgb(0, 0, 0));
-  border-radius: 8px;
+
+#div1{
+padding: 50px;
+margin-top: 250px;
+background: linear-gradient(rgba(241, 176, 101, 0.3),rgb(245, 7, 78));
+border-radius: 8px;
+}
+#div2{
+ padding: 50px;
+background: linear-gradient(rgb(0, 0, 0),rgb(243, 235, 235));
+border-radius: 8px;
+}
+
+  #petspa{
+    text-align: center;
+    font: 40px bold italic;
+  }
+  #write{
+    margin:10px;
+    /* background-color: white; */
+    color:black;
+    border-radius: 50px;
+    outline:none;
   }
   
