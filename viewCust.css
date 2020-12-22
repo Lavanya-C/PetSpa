@@ -1,0 +1,25 @@
+body{
+    background-image:linear-gradient(235deg, rgb(98, 200, 240),rgb(4, 152, 238),rgb(34, 147, 252),rgb(75, 221, 240));
+}
+
+table {
+    border-collapse: solid;
+    height:auto;
+    width: 80%;
+    color: #022a74;
+    font-family: monospace;
+    font-size: 15px;
+    text-align: left;
+}
+th {
+    background-color: #0615f0;
+    color: white;
+    font-size : 20px;
+    padding:3px
+}
+tr{
+    background-color: rgb(136, 241, 241);
+}
+tr:nth-child(even) {
+    background-color: #f8f8ff
+}

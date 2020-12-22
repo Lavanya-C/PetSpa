@@ -80,6 +80,8 @@ $email = $_SESSION['email'];
                     <button name="delete" type="submit" onclick="delAler2t()" value="submit">Delete</button>
                 </form>
             </div>
+
+            <button id="viewSpa" onclick='location.href=`viewSpa.php`'>View</button>
         </div>
 
         <div id = "cust">
@@ -98,6 +100,10 @@ $email = $_SESSION['email'];
                     <button name="delete" type="submit" onclick="delAlert3()" value="submit">Delete</button>
                 </form>
             </div>
+
+            <button id="viewCust" onclick='location.href=`viewCust.php`'>View</button>
+
+
 
         </div>
 

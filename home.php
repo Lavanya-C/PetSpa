@@ -39,7 +39,7 @@
                           <input type="password" id="passwd" name="passwords" required>
                       </div>
                       <div class="forgot-pass">
-                          <a href="#" style="color: blue;">Forgot Password?</a>
+                          <a href="#" style="color:white font-size:10px">Forgot Password?</a>
                       </div>
                       <div class="btn">
                           <div class="inner"></div>
