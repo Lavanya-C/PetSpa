@@ -98,3 +98,9 @@ label{
     position: fixed;
     z-index:1;
 }
+#admin,#cust{
+    align-content: center;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    text-align: center;
+}

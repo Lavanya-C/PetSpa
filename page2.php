@@ -2,6 +2,14 @@
 include_once 'conn.php';
 session_start();
 $cust_email = $_SESSION['cust_email'];
+$sql1 = "SELECT customer_id FROM `customer` WHERE cust_email= '$cust_email'";
+$res = $conn->query($sql1);
+if($res->num_rows > 0){
+    while($row=$res->fetch_assoc()){
+        $_SESSION['cust_id']= $row['customer_id'];
+        // echo " ".$_SESSION['cust_id']." ";
+    } 
+}
 ?>
 
 <!DOCTYPE html>
@@ -56,18 +64,78 @@ $cust_email = $_SESSION['cust_email'];
 
         <div id="SideNav" class="sidenav" >
             <button class="closebtn" onclick="closeNav()"><i class="material-icons" style='font-size:30px ,font-color:white'>arrow_back</i></button>
-            <button class="navbtn">Pet</button>
-            <button class="navbtn">order</button>
+            <p id="rpet" onclick='document.getElementById(`disp1`).style.display=`block`' class="navbtn">Register Pet</p>
+            <p id="vpet" onclick='location.href="viewCpet.php"' class="navbtn">Your Pets</p>
+            <p id="dpet" onclick='document.getElementById(`disp2`).style.display=`block`' class="navbtn">order</p>
+
+
+            <p id="orders" class="navbtn">order</p>
         </div>
+
+        
+        <div id="disp1" class="display1">  
+            <form class="display1-content animate" action="insertPet.php" method="post">
+            <button class="closebtn2" onclick='document.getElementById(`disp1`).style.display=`none`' >
+            <i class="material-icons" style='font-size:30px ,font-color:white'>arrow_back</i></button>
+
+                <div class="container">
+                    <center><h2>Register PET</h2></center>
+                    <label class="x1" for="pname">Name</label><br>
+                    <input type="text" placeholder="Pet Name" id="pname" name="pet_name" required><br>
+                    <label class="x2" for="pgen">Gender</label><br>
+                    <input type="text" id="pgen" placeholder="Gender" name="gender" required><br>
+                    <label class="x3" for="pdob">Date of Birth</label><br>
+                    <input type="date" id="pdob" placeholder="Birth Date" name="DOB"><br>
+
+                    <label class="x4" for="animal">Animal</label><br>
+                    <select class="select" name="animal" id="animal">
+                        <option id="dog" value="dog">Dog</option>
+                        <option id="cat" value="cat">Cat</option>
+                    </select><br>
+                    <label class="x5" for="pbreed">Breed</label><br>
+                    <input type="text" id="pbreed" placeholder="Breed" name="pet_breed"><br>
+                    <label class="x6" for="page">Age</label><br>
+                    <input type="text" id="page" placeholder="Age" name="age"><br>
+                    
+                    <!-- <label class="x7" for="img">Select image:</label>
+                    <input type="file" id="pimg" name="img" accept="image/*"> -->
+
+                    <button id="next" type="submit" name="submit" value="submit">Register</button>
+                   
+                </div>
+            </form>
+        </div>
+
+        <div id="disp2" class="display2">  
+            <form class="display1-content animate" action="deletePet.php" method="post">
+            <button class="closebtn2" onclick='document.getElementById(`disp2`).style.display=`none`' >
+            <i class="material-icons" style='font-size:30px ,font-color:white'>arrow_back</i></button>
+
+            <div class="container">
+                    <?php
+                        $cust_id = $_SESSION['cust_id'];
+                        $sql2 = "SELECT * FROM `pets` WHERE cust_id='$cust_id'";
+                        $res = $conn->query($sql2);
+                        if($res->num_rows>0){
+                            while($rows = $res->fetch->assoc()){
+                                echo " ";
+                            }
+                        }
+                    ?>
+                    <button id="next" type="submit" name="submit" value="submit">Register</button>
+                   
+                </div>
+            </form>
+        </div>
+
+        
+
         <script>
             function openNav() {
                    document.getElementById("SideNav").style.width="200px";}
             function closeNav() {
                     document.getElementById("SideNav").style.width="0px";}
-            function openShop() {
-                    document.getElementById("popShop").style.display="block";}
-
-    
+               
         </script>
     </body>
 
