@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link href="delPetPage.css" rel="stylesheet">
+        <link href="CSS/delPetPage.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="shopLogin.css">
+        <link rel="stylesheet" href="CSS/shopLogin.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     </head>

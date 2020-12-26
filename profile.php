@@ -5,7 +5,7 @@ $cust_id = $_SESSION['cust_id'];
 ?>
 <html>
     <head>
-        <link href="profile.css" rel="stylesheet">
+        <link href="CSS/profile.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
