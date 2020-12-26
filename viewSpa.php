@@ -11,7 +11,7 @@
     <p id='cancel' onclick='location.href=`adminpage1.php`'><i style='font-size:35px' class='material-icons'>cancel</i></p>
 
         <?php
-        $sql1 = "SELECT * FROM `shops`";
+        $sql1 = "SELECT logo ,shop_name, shop_license, shop_contact, shop_address, shop_email, owner_name, start_time, end_time FROM `shops`";
         $res1 = $conn->query($sql1);
         if($res1 ->num_rows>0){
             while($row1 = $res1->fetch_assoc()){

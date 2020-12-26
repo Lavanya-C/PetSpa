@@ -1,8 +1,8 @@
 body{
-    background: -webkit-linear-gradient(400deg,rgb(53, 175, 4), rgb(24, 57, 240), rgb(34, 128, 236),rgb(238, 241, 55));
+    background: -webkit-linear-gradient(400deg,rgb(53, 175, 4), rgb(34, 128, 236),rgb(238, 241, 55));
 }
 h1{
-    color: blueviolet;
+    color: white;
     font-size: 40px;
 }
 h2{
@@ -98,7 +98,7 @@ label{
     position: fixed;
     z-index:1;
 }
-#admin,#cust{
+#admin,#cust, #pet{
     align-content: center;
     border-top: 2px solid blue;
     border-bottom: 2px solid blue;

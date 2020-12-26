@@ -27,6 +27,7 @@ $email = $_SESSION['email'];
         $conn->close();
         ?>
         <div class="admin">
+        <center>
             <h3>Spa Shop</h3>
             <button id="addSpa" onclick="openForm1()">Add</button>
 
@@ -63,6 +64,7 @@ $email = $_SESSION['email'];
                     <input type="time" id="spEnd" name="end_time" placeholder="Shop Close timings" required><br>
 
                     <button name="save" type="submit" value="submit">Submit</button>
+                    
                 </form>
             </div>
             
@@ -77,18 +79,19 @@ $email = $_SESSION['email'];
                     <label for="spmail">Shop Mail Id</label>
                     <input type="text" id="spmail" name="shop_email" placeholder="Shop mail id" required><br>
                     
-                    <button name="delete" type="submit" onclick="delAler2t()" value="submit">Delete</button>
+                    <button name="delete" type="submit" onclick="delAlert2()" value="submit">Delete</button>
                 </form>
             </div>
 
             <button id="viewSpa" onclick='location.href=`viewSpa.php`'>View</button>
         </div>
+        </center>
 
         <div id = "cust">
             <h3>Customer</h3>
-            <button id ="delCust" onclick="openform3()">Delete</button>
+            <button id ="delCust" onclick="openForm3()">Delete</button>
             <div class="form-popup3" id="deleteCust">
-                <form action="deleteCust.php" class="form-container animate" method="post">
+                <form action="delCust.php" class="form-container animate" method="post">
                     <span class="cancel" onclick="document.getElementById('delCust').style.display='none'">
                         <i class="material-icons">close</i></span><br>
                             <h2>Delete Customer</h2>
@@ -102,10 +105,16 @@ $email = $_SESSION['email'];
             </div>
 
             <button id="viewCust" onclick='location.href=`viewCust.php`'>View</button>
-
-
-
         </div>
+
+        <div id='pet'>
+            <center>
+            <h3>Pet</h3>
+            
+            <button id="viewPet" onclick='location.href=`viewPet.php`'>View</button>
+            </center>
+        </div>
+
 
 
         <script>
@@ -124,6 +133,7 @@ $email = $_SESSION['email'];
             function delAlert3(){
                 alert('The Customer will be deleted permanently!!')
             }
+            
         </script>       
 
         </body>
