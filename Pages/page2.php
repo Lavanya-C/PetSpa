@@ -14,7 +14,7 @@ if($res->num_rows > 0){
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="page2.css" rel="stylesheet">
+        <link href="CSS/page2.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <div class="head">

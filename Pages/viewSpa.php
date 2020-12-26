@@ -4,7 +4,7 @@
 <html>
     <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="ViewSpa.css">
+    <link rel="stylesheet" href="CSS/viewSpa.css">
     </head>
     <body>
     <div id='page'>
