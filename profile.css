@@ -1,0 +1,41 @@
+body{
+    background: -webkit-linear-gradient(135deg,rgb(192, 236, 88), rgb(216, 181, 26), rgb(241, 46, 105),rgb(213, 235, 18));
+
+}
+h1{
+    padding: 15px;
+}
+#container{
+    margin: 2% 28%;
+    text-align:center;
+    height:650px;
+    width:45%;
+    background-color: rgb(253, 170, 114);
+    border-radius: 30px;
+}
+
+img{
+    height:150px;
+    width:150px;
+    border-radius: 80px;
+    color:white;
+    background-color: rgb(243, 199, 148);
+}
+#content{
+    font-size: 27px;
+}
+.cust{
+    margin:15px;
+    border-bottom: 2px solid black;
+}
+.cancel{
+    cursor: pointer;
+    margin-left:5px;
+    font-size:20px;
+    color:white;
+    background-color: rgb(180, 41, 6);
+    padding:10px;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+}

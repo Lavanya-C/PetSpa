@@ -7,7 +7,6 @@ $res = $conn->query($sql1);
 if($res->num_rows > 0){
     while($row=$res->fetch_assoc()){
         $_SESSION['cust_id']= $row['customer_id'];
-        // echo " ".$_SESSION['cust_id']." ";
     } 
 }
 ?>
@@ -64,9 +63,10 @@ if($res->num_rows > 0){
 
         <div id="SideNav" class="sidenav" >
             <button class="closebtn" onclick="closeNav()"><i class="material-icons" style='font-size:30px ,font-color:white'>arrow_back</i></button>
+            <p id="vcust" onclick='location.href="profile.php"' class="navbtn">Profile</p>
             <p id="rpet" onclick='document.getElementById(`disp1`).style.display=`block`' class="navbtn">Register Pet</p>
             <p id="vpet" onclick='location.href="viewCpet.php"' class="navbtn">Your Pets</p>
-            <p id="dpet" onclick='document.getElementById(`disp2`).style.display=`block`' class="navbtn">order</p>
+            <p id="dpet" onclick='location.href="delPetPage.php" ' class="navbtn">Delete Pet</p>
 
 
             <p id="orders" class="navbtn">order</p>
@@ -106,28 +106,7 @@ if($res->num_rows > 0){
             </form>
         </div>
 
-        <div id="disp2" class="display2">  
-            <form class="display1-content animate" action="deletePet.php" method="post">
-            <button class="closebtn2" onclick='document.getElementById(`disp2`).style.display=`none`' >
-            <i class="material-icons" style='font-size:30px ,font-color:white'>arrow_back</i></button>
-
-            <div class="container">
-                    <?php
-                        $cust_id = $_SESSION['cust_id'];
-                        $sql2 = "SELECT * FROM `pets` WHERE cust_id='$cust_id'";
-                        $res = $conn->query($sql2);
-                        if($res->num_rows>0){
-                            while($rows = $res->fetch->assoc()){
-                                echo " ";
-                            }
-                        }
-                    ?>
-                    <button id="next" type="submit" name="submit" value="submit">Register</button>
-                   
-                </div>
-            </form>
-        </div>
-
+        
         
 
         <script>

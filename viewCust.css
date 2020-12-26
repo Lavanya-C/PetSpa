@@ -23,3 +23,6 @@ tr{
 tr:nth-child(even) {
     background-color: #f8f8ff
 }
+.cancel{
+    cursor: pointer;
+}

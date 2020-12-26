@@ -21,7 +21,7 @@
      </tr>
 
         <?php
-        $sql1 = "SELECT * FROM `customer`";
+        $sql1 = "SELECT `customer_id`, `cust_name`, `cust_email`, `cust_address`, `cust_contact`, `DOB`, `Date` FROM `customer`";
         $res1 = $conn->query($sql1);
         if($res1 ->num_rows>0){
             while($row1 = $res1->fetch_assoc()){
