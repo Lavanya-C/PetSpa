@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: auto;
+}
 #page{
     height:100%;
     background-image: linear-gradient(235deg, palevioletred,pink,rgb(231, 18, 100),pink,rgb(212, 21, 165));
@@ -43,4 +49,14 @@ h1{
 }
 #cancel:hover{
     color:black;
+}
+#treat{
+    width:150px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    outline:none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link href="CSS/delPetPage.css" rel="stylesheet">
+        <link href="../CSS/delPetPage.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
@@ -10,7 +10,7 @@
             <form action="delPet.php" method="post">
             <h1>Remove Pet</h1>
             <?php
-            include_once 'conn.php';
+            include_once '../conn.php';
             session_start();
             $cust_id = $_SESSION['cust_id'];
 

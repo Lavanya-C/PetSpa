@@ -1,10 +1,10 @@
 <?php
-    include_once 'conn.php';
+    include_once '../conn.php';
 ?>
 <html>
     <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="CSS/viewCust.css">
+    <link rel="stylesheet" href="../CSS/viewCust.css">
     </head>
     <body>
     <div id='page'>

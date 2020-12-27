@@ -1,5 +1,5 @@
 <?php
-include_once 'conn.php';
+include_once '../conn.php';
 session_start();
 $email = $_SESSION['email'];
 ?>
@@ -7,7 +7,7 @@ $email = $_SESSION['email'];
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="CSS/adminpage1.css">
+        <link rel="stylesheet" href="../CSS/adminpage1.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>

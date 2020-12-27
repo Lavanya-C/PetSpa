@@ -48,15 +48,15 @@ body{
   left: 30%;
   top: 40%;
   transform: translate(-50%,-60%);
-  background-image: url(images/excite.jpeg);
+  background-image: url(..\images\excite.jpeg);
   background-size: 100% 100%;
   box-shadow: 1px 1.5px 5px 8px rgb(7, 7, 7);
   animation: slider 20s infinite;
 }
 @keyframes slider{
-  0%{background-image: url(images/travel.png); }
-  33%{ background-image: url(images/bath.jpg);}
-  69%{ background-image: url(images/walk.png);}
+  0%{background-image: url(..\images\travel.png); }
+  33%{ background-image: url(..\images\bath.jpg);}
+  69%{ background-image: url(..\images\walk.png);}
 }
 .menu{
   

@@ -1,5 +1,5 @@
 <?php
-include_once 'conn.php';
+include_once '../conn.php';
 session_start();
 $cust_id=$_SESSION['cust_id'];
 
