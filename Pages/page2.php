@@ -1,5 +1,5 @@
 <?php
-include_once 'conn.php';
+include_once '../conn.php';
 session_start();
 $cust_email = $_SESSION['cust_email'];
 $sql1 = "SELECT customer_id FROM `customer` WHERE cust_email= '$cust_email'";
@@ -14,7 +14,7 @@ if($res->num_rows > 0){
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="CSS/page2.css" rel="stylesheet">
+        <link href="../CSS/page2.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <div class="head">
@@ -28,7 +28,7 @@ if($res->num_rows > 0){
             <div id=ticket>
                 <label for="selectShop" title="Whiskers"><br>
                 <center>
-                    <img id="img" src="images\salon.png">
+                    <img id="img" src="..\images\salon.png">
                     <input type="submit" name ="shop"  value="Whiskers" autofocus/>
                     
                 </center>
@@ -37,7 +37,7 @@ if($res->num_rows > 0){
             <div id="ticket">
                 <label for="selectShop" title="Pet Paw">
                     <center>
-                    <img id="img" src="images\dab.jpeg" >
+                    <img id="img" src="..\images\dab.jpeg" >
                     <input type="submit" name ="shop" value="Pet Paw"  autofocus/>
                     </center>
                 </label>
@@ -45,7 +45,7 @@ if($res->num_rows > 0){
             <div id="ticket">
                 <label for="selectShop" title="Drools" >
                 <center>
-                    <img id="img" src="images\dog1.png" >
+                    <img id="img" src="..\images\dog1.png" >
                     <input type="submit" name="shop" value="Drools" autofocus/>
                 </center>
                 </label>
@@ -53,7 +53,7 @@ if($res->num_rows > 0){
             <div id="ticket">
                 <label for="selectShop" title="Meow$Bouw" >
                     <center>
-                    <img id="img" src="images\excite.jpeg">
+                    <img id="img" src="..\images\excite.jpeg">
                     <input type="submit" name="shop" value="Meow$Bouw" autofocus/>
                     </center>
                 </label>

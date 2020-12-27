@@ -1,12 +1,12 @@
 <?php
-    include_once 'conn.php';
+    include_once '../conn.php';
     session_start();
     $cust_id = $_SESSION['cust_id'];
 ?>
 <html>
     <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="CSS/viewCpet.css">
+    <link rel="stylesheet" href="../CSS/viewCpet.css">
     </head>
     <body>
     <div id='page'>
@@ -18,7 +18,7 @@
         if($res1 ->num_rows>0){
             while($row1 = $res1->fetch_assoc()){
                 echo "<div id ='container'>
-                <center><img id='image1' src='images/meow-cat.jpeg'>
+                <center><img id='image1' src='../images/meow-cat.jpeg'>
                 <h1 id='sname'>Name : ".$row1['pet_name']."</h1>
                 <p>Gender : ".$row1['gender']."</p>
                 <p>Date of Birth : ".$row1['DOB']."</p>
