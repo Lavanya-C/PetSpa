@@ -1,0 +1,12 @@
+body{
+    background: -webkit-linear-gradient(180deg,rgb(126, 245, 90), rgb(56, 240, 132), rgb(16, 133, 45),rgb(118, 243, 145));
+    
+}
+
+.box{
+    height: auto;
+    width:40%;
+    border-radius: 30px;
+    margin: 5% 35%;
+    background-color: rgb(196, 247, 184);
+}

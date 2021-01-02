@@ -2,7 +2,6 @@
 include_once '../conn.php';
 session_start();
 $shop_id = $_SESSION['shop_id'];
-echo "$shop_id";
 ?>
 
 <html>

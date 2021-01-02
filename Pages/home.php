@@ -9,7 +9,6 @@
     <body> 
         <div class="menu">
         <ul>
-            <!-- <li><a href="#">Home</a></li> -->
             <li><a href="#div1">About us</a></li>
             <li><a href="#div2">Contact</a></li>
             <li>
@@ -22,8 +21,8 @@
                   <div class="text" style="color:blueviolet'" >Login</div>
                   <form action="login.php" method="POST">
                       <div class="data">
-                         <label>User Type</label>
-                         <select class="select" name="usertype">
+                         <label>User Type *</label>
+                         <select class="select" name="usertype" required>
                              <option selected disabled>--Select--</option>
                              <option value="admin" name="admin" >Admin</option>
                              <option value="user" name="customer">User</option>
@@ -31,7 +30,7 @@
                          </select>
                       </div>   
                       <div class="data">
-                        <label>Email</label>
+                        <label>Email</label> 
                         <input type="text" id="email" name="email" required>
                     </div>    
                       <div class="data">
@@ -39,7 +38,7 @@
                           <input type="password" id="passwd" name="passwords" required>
                       </div>
                       <div class="forgot-pass">
-                          <a href="#" style="color:white font-size:10px">Forgot Password?</a>
+                          <a href="forPass.html" style="color:white font-size:10px">Forgot Password?</a>
                       </div>
                       <div class="btn">
                           <div class="inner"></div>
@@ -53,7 +52,7 @@
                 <div class="submenu1">
                     <ul>
                         <li><a href="signup.html">User</a></li>
-                        <li><a href="#">Spa</a></li> 
+                        <li><a href="#div3">Spa</a></li> 
                     </ul>
                 </div>
             </li>
@@ -63,20 +62,33 @@
 
         <div class="logo"><i class="fa fa-paw fa-4x" style="font-style:italic" aria-hidden="true">    PET SPA</i></p></div>
         <div class="imgslider"></div>
+            
             <div id=div1>
                 <p>
                 <h1>About us</h1>
                 Worried About your pet..!!<br>Book a spa treatment Today for your pet.<br>We groom him the best.<br>We understand the pets better.
-                </p></div>
+                </p>
+            </div>
+
             <div id=div2>
                 <p>
                 <h1>Contact us</h1>
                 Write to us at : aishwaryac21121999@gmail.com /  lavanyacnaik44@gmail.com <br>For further queries call :  9900520806 / 9108170247.<br>
                 <address>
-
                 <center><a href="mailto:aishwaryac21121999@gmail.com?subject=PetSpa" id="write"><i class="material-icons" style="font-size:50px">send</i></a>
                 <a href="mailto:lavanyacnaik44@gmail.com?subject=PetSpa Application Feedback" id="write"><i class="material-icons" style="font-size:50px">feedback</i></a></center>
+                </address>
+            </p>
+            </div>
 
+            <div id=div3>
+                <p>
+                <h1>Spa Registration</h1>
+                Write to us about your shop with essential details.<br>Include shop name, address , license number, logo, telephone number,shop timings.<br>
+                Include owner name and contact number number also.<br>After the administration verificationyou will be registered.<br>
+                You will receive mail regarding succesful registration.
+                <address>
+                <center><a href="mailto:aishwaryac21121999@gmail.com?subject=Spa Registration" id="write"><i class="material-icons" style="font-size:50px">send</i></a></center>
                 </address>
             </p></div>
          
