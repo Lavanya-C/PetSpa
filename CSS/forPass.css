@@ -1,0 +1,43 @@
+body{
+    background: -webkit-linear-gradient(35deg,rgb(116, 243, 77), rgb(241, 234, 128), rgb(241, 161, 95),rgb(253, 76, 85));
+}
+.container{
+    /* text-align: center; */
+    height: auto;
+    width:40%;
+    border-radius: 30px;
+    margin: 5% 35%;
+    background-color: rgb(196, 247, 184);
+}
+label{
+    margin-left: 10%;
+    font-size: 20px;
+}
+input, select{
+    margin-left: 10%; 
+    border-radius: 10px;
+    width:350px;
+    height:50px;
+    font-size: 17px;
+}
+
+.closebtn{
+    float:right;
+    background-color: transparent;
+    color: rgb(14, 112, 55);
+    margin-left: 168px;
+    outline: none;
+    border:none;
+    border-radius: 30px;
+}
+
+#save{
+    font-size: 20px;
+    padding:10px;
+    margin:5% 35%;
+    border:none;
+    outline:none;
+    background-color: rgb(13, 126, 47);
+    color:white;
+    border-radius: 10px;
+}

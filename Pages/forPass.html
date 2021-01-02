@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="../CSS/forPass.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>   
+    <body>
+        <div class="container">
+        <button class="closebtn" onclick= 'location.href=`home.php`' >
+            <i class="material-icons" style='font-size:30px ,font-color:white'>cancel</i></button><br>
+            <form action = "updatePass.php" method="post">
+                <center><h1>Forgot Password</h1></center>
+                     <label>User Type *</label><br>
+                         <select class="select" name="usertype" required>
+                             <option selected disabled>--Select--</option>
+                             <option value="admin" name="admin" >Admin</option>
+                             <option value="user" name="customer">User</option>
+                             <option value="spa" name="shops">Spa</option>
+                         </select><br>
+                    <label for='l1'>Email Id: </label><br>
+                    <input id='l1' type = 'email' name = "email" placeholder="Enter mail id" required ><br>
+                    <label for='l2'>New Password: </label><br>
+                    <input id='l1' type = 'password' name = "newPass" placeholder="Enter new password" required><br>
+                    <label for='l2'>Repeat Password: </label><br>
+                    <input id='l1' type = 'password' name = "rePass" placeholder="Repeat password" required><br>
+
+                        
+                <button id="save" name="save" type="submit" value="submit" onclick="updateAlert1()">Update</button>
+            </form>
+        </div>
+
+    <script>
+        function updateAlert1(){
+                alert('Password Updated!!\nRemember it.  ')
+            }
+    </script> 
+    </body> 
+</html?
