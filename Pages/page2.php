@@ -22,8 +22,33 @@ if($res->num_rows > 0){
             <p class="logout" onclick="location.href='home.php' "><i style="font-size:30px" class="fas fa-sign-out-alt"></i></p>
         </div>
     </head>
-    <body>        
+    <body>  
+
         <div id='bucket'>
+            <?php
+            $sql2 = "SELECT * FROM `shops` ";
+            $res2 = $conn->query($sql2);
+            if($res->num_rows>0){
+                while($row2 = $res2->fetch_assoc()){
+                    // echo" ".$row2["shop_name"].$row2["shop_id"]."<br>";
+                    echo" <form id='disp' action='go.php' method='post'>
+                    <div id='ticket'>
+                        <label for='selectShop' title=".$row2["shop_name"]."><br>
+                        <center>
+                            <img id='img' src=".$row2["logo"].">
+                            <input type='submit' name ='shop'  value=".$row2["shop_name"].">
+                            
+                        </center>
+                        </label>
+                    </div>
+                </form>";
+                }
+            }
+        
+        ?>
+        </div>  
+
+        <!-- <div id='bucket'>
             <form id="disp" action="go.php" method="post">
             <div id=ticket>
                 <label for="selectShop" title="Whiskers"><br>
@@ -59,7 +84,7 @@ if($res->num_rows > 0){
                 </label>
             </div>
         </form>
-        </div>             
+        </div>              -->
 
         <div id="SideNav" class="sidenav" >
             <button class="closebtn" onclick="closeNav()"><i class="material-icons" style='font-size:30px ,font-color:white'>arrow_back</i></button>
