@@ -45,10 +45,20 @@ input{
     height:80%;
     margin:auto 30% auto 30%;
     border-radius: 10px;
-    background: -webkit-linear-gradient(40deg,rgb(104, 14, 250), rgb(248, 248, 247), rgb(201, 8, 240),rgb(95, 80, 231));
+    background: -webkit-linear-gradient(40deg,rgb(101, 238, 142), rgb(248, 248, 247), rgb(82, 185, 245),rgb(195, 238, 126));
     padding: 25px;
     outline: none;
     overflow:scroll;
+}
+
+.form-container1{
+    height:80%;
+    margin:auto 30% auto 30%;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(40deg,rgb(101, 238, 142), rgb(248, 248, 247), rgb(82, 185, 245),rgb(195, 238, 126));
+    padding: 25px;
+    outline: none;
+    /* overflow:scroll; */
 }
 
 .animate{
@@ -82,7 +92,7 @@ label{
 }
 
 .form-popup2{  
-    height: auto;
+    /* height: auto; */
     width:60%; 
     margin:auto 10% auto 10%;
     display: none;
@@ -91,16 +101,20 @@ label{
 }
 
 .form-popup3{  
-    height: auto;
+    /* height: auto; */
     width:60%; 
     margin:auto 10% auto 10%;
     display: none;
     position: fixed;
     z-index:1;
 }
-#admin,#cust, #pet{
+#admin,#cust, #pet,#order, #treat{
     align-content: center;
     border-top: 2px solid blue;
     border-bottom: 2px solid blue;
     text-align: center;
+}
+
+#t1{
+    width:150px;
 }

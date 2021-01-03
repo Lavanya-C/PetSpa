@@ -6,11 +6,11 @@ $shop_id = $_SESSION['shop_id'];
 
 <html>
     <head>
-        <link href="../CSS/shopTreat.css" rel="stylesheet">
+        <link href="../CSS/shopTreat1.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     <body>
-        <div class="container1">
+        <div class="container">
             
             <p id='cancel' onclick='location.href=`shopLogin.php`'><i style='font-size:35px' class='material-icons'>cancel</i></p><br>
             <form action='addTreat.php' method ="post">
@@ -20,20 +20,20 @@ $shop_id = $_SESSION['shop_id'];
             $sql1 = "SELECT treat_id FROM `treatlist` EXCEPT SELECT treat_id FROM `shoptreat` WHERE shop_id='$shop_id'";
             $res1 = $conn->query($sql1);
             if($res1->num_rows>0){
-                echo "<label for='treatment'>Select : </label> <select name='treatment'>";
+                echo "<label for='treatment'>Select : </label><select name='treatment'>";
                 while($row1 = $res1->fetch_assoc()){
                     echo "<option value ='" . $row1['treat_id'] . "'>" . $row1['treat_id'] . "</option>";                
                 }
-                echo "<br><label for='price'>Treatment Price : </label>
-                <input id ='price' name='price' type='text' placeholder='enter the selected treament price'>";
-                echo "</select><br><br><button name='update' type='submit' onclick='addAlert1()' value='submit'>Update</button>";
+                echo "</select><br>";
+                echo "<label for='price'>Price : </label><input name='price' type='text' placeholder='treatment price'>
+                <br><button id='b2' name='update' type='submit' onclick='addAlert1()' value='submit'>Update</button>";
 
             } 
             ?> 
             </form>                       
         </div>
 
-        <div class="container2">
+        <div class="container">
             
             <p id='cancel' onclick='location.href=`shopLogin.php`'><i style='font-size:35px' class='material-icons'>cancel</i></p><br>
             <form action='delTreat.php' method ="post">
@@ -47,14 +47,14 @@ $shop_id = $_SESSION['shop_id'];
                 while($row1 = $res1->fetch_assoc()){
                     echo "<option value ='" . $row1['treat_id'] . "'>" . $row1['treat_id'] . "</option>";                
                 }
-                echo "</select><br><br><button name='remove' type='submit' onclick='delAlert1()' value='submit'>Remove</button>";
+                echo "</select><br><br><button id='b1' name='remove' type='submit' onclick='delAlert1()' value='submit'>Remove</button>";
 
             } 
             ?>
             </form>            
         </div>
 
-        <div class="treat">
+        <div id="treat">
         <table>
             <tr>
                 <th>Treament Id</th>

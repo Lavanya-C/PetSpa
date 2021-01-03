@@ -18,7 +18,7 @@ $cust_id = $_SESSION['cust_id'];
             $res = $conn->query($sql1);
             if($res->num_rows >0){
                 while($row = $res->fetch_assoc()){
-                    echo "<div class='cust' ><img src='images/peo.png'><br><p id='content' >
+                    echo "<div class='cust' ><img src='../images/pep.png'><br><p id='content' >
                     ".$row['cust_name']."<br>
                     ".$row['DOB']."<br>"
                     .$row['cust_contact']."<br>

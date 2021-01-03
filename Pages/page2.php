@@ -30,7 +30,6 @@ if($res->num_rows > 0){
             $res2 = $conn->query($sql2);
             if($res->num_rows>0){
                 while($row2 = $res2->fetch_assoc()){
-                    // echo" ".$row2["shop_name"].$row2["shop_id"]."<br>";
                     echo" <form id='disp' action='go.php' method='post'>
                     <div id='ticket'>
                         <label for='selectShop' title=".$row2["shop_name"]."><br>
@@ -46,45 +45,7 @@ if($res->num_rows > 0){
             }
         
         ?>
-        </div>  
-
-        <!-- <div id='bucket'>
-            <form id="disp" action="go.php" method="post">
-            <div id=ticket>
-                <label for="selectShop" title="Whiskers"><br>
-                <center>
-                    <img id="img" src="..\images\salon.png">
-                    <input type="submit" name ="shop"  value="Whiskers" autofocus/>
-                    
-                </center>
-                </label>
-            </div>
-            <div id="ticket">
-                <label for="selectShop" title="Pet Paw">
-                    <center>
-                    <img id="img" src="..\images\dab.jpeg" >
-                    <input type="submit" name ="shop" value="Pet Paw"  autofocus/>
-                    </center>
-                </label>
-            </div>
-            <div id="ticket">
-                <label for="selectShop" title="Drools" >
-                <center>
-                    <img id="img" src="..\images\dog1.png" >
-                    <input type="submit" name="shop" value="Drools" autofocus/>
-                </center>
-                </label>
-            </div>
-            <div id="ticket">
-                <label for="selectShop" title="Meow$Bouw" >
-                    <center>
-                    <img id="img" src="..\images\excite.jpeg">
-                    <input type="submit" name="shop" value="Meow$Bouw" autofocus/>
-                    </center>
-                </label>
-            </div>
-        </form>
-        </div>              -->
+        </div>          
 
         <div id="SideNav" class="sidenav" >
             <button class="closebtn" onclick="closeNav()"><i class="material-icons" style='font-size:30px ,font-color:white'>arrow_back</i></button>
@@ -94,7 +55,7 @@ if($res->num_rows > 0){
             <p id="dpet" onclick='location.href="delPetPage.php" ' class="navbtn">Delete Pet</p>
 
 
-            <p id="orders" class="navbtn">order</p>
+            <p id="order" onclick='location.href="viewCOrder.php" ' class="navbtn">Your order</p>
         </div>
 
         

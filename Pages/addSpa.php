@@ -21,7 +21,7 @@ if(isset($_POST['save']))
         $sql="INSERT INTO `shops` (shop_name, shop_address, shop_license, shop_contact, shop_email, passwords, owner_name, owner_contact, start_time, end_time,logo) values ('$shop_name', '$shop_address', '$shop_license', '$shop_contact', '$shop_email', '$hashed_password', '$owner_name', '$owner_contact', '$start_time', '$end_time','$logo')";
 
     if (mysqli_query($conn, $sql)) {
-        echo "<meta http-equiv='refresh' content='0;url=adminpage1.php'>";
+        header("location:adminpage1.php");
 
 	} else {
 		echo "Error: " . $sql . " " . mysqli_error($conn);

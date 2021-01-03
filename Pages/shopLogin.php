@@ -40,6 +40,8 @@ if($res->num_rows>0){
                 <p>End time : ".$row['end_time']."</p>
                 <p id='edit' onclick ='location.href = `shopUpdate.php` '><i style ='font-size:40px' class='material-icons'>edit</i></p>
                 <p id='treat' onclick ='location.href = `shopTreat.php` '>Treatment <i style ='font-size:20px' class='material-icons'>edit</i></p>
+                <p id='view' onclick ='location.href = `viewSOrder.php` '>Orders <i style ='font-size:20px' class='material-icons'>shopping_basket</i></p>
+
                 </center></div></div>";
             }
         }

@@ -1,12 +1,84 @@
 body{
-    background: -webkit-linear-gradient(180deg,rgb(126, 245, 90), rgb(56, 240, 132), rgb(16, 133, 45),rgb(118, 243, 145));
+    background: -webkit-linear-gradient(245deg,rgb(126, 245, 90), rgb(56, 240, 132), rgb(16, 133, 45),rgb(118, 243, 145),rgb(17, 160, 72));
     
+}
+h1{
+    color:rgb(7, 73, 7);
+    border-bottom: 1px solid white;
+    border-radius:20px ;
+}
+h3{
+    color:rgb(7, 71, 7) ;
+    border-top: 2px solid rgb(3, 143, 3);
+    border-bottom: 1px solid white;
 }
 
 .box{
+    padding: 0%;
     height: auto;
     width:40%;
     border-radius: 30px;
-    margin: 5% 35%;
+    margin: 1% 25%;
+    border: 3px solid rgb(7, 71, 7);
     background-color: rgb(196, 247, 184);
+}
+.closebtn{
+    float:left;
+    background-color: transparent;
+    color: rgb(3, 77, 34);
+    outline: none;
+    border:none;
+    border-radius: 30px;
+}
+#sdet{
+    margin-left: 5%;
+}
+
+input [type=checkbox]{
+    margin-left:30%;
+    font-size: 15px;
+}
+#t2{
+    font-size:18px;
+}
+select{
+    margin-left: 40%;
+    padding:2px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    width: 100px;
+}
+#t1{
+    margin-left:40%;
+    padding:1px;
+    font-size: 18px;
+    
+}
+#t4{
+    margin-left: 40%;
+    width:150px;
+    border-radius: 10px;
+}
+#t3{
+    margin-left: 40% ;
+    padding:2px;
+    font-size: 18px;
+    
+}
+#b2{
+    font-size: 20px;
+    padding:2px;
+    margin:1%;
+    border:none;
+    outline:none;
+    background-color: rgb(13, 126, 47);
+    color:white;
+    border-radius: 3px;
+}
+#read{
+    border:none;
+    width:150px;
+    outline:none;
+    background: transparent;
 }
