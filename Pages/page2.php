@@ -82,6 +82,8 @@ if($res->num_rows > 0){
                     <input type="text" id="pbreed" placeholder="Breed" name="pet_breed"><br>
                     <label class="x6" for="page">Age</label><br>
                     <input type="text" id="page" placeholder="Age" name="age"><br>
+                    <label class="x7" for="page">Image</label><br>
+                    <input type="text" id="page" placeholder="image path" name="pet_image"><br>
                     
                     <!-- <label class="x7" for="img">Select image:</label>
                     <input type="file" id="pimg" name="img" accept="image/*"> -->
