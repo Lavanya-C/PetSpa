@@ -11,8 +11,9 @@ if(isset($_POST['submit']))
     $animal = $_POST['animal'];
     $pet_breed = $_POST['pet_breed'];
     $age = $_POST['age'];
+    $pet_image = $_POST['pet_image'];
     
-    $sql="INSERT INTO `pets` (pet_name, gender, DOB, animal, pet_breed, age, cust_id) values ('$pet_name', '$gender', '$DOB', '$animal', '$pet_breed', '$age', '$cust_id')";
+    $sql="INSERT INTO `pets` (pet_name, gender, DOB, animal, pet_breed, age, cust_id, pet_image) values ('$pet_name', '$gender', '$DOB', '$animal', '$pet_breed', '$age', '$cust_id','$pet_image')";
     if (mysqli_query($conn, $sql)) {
         header("location:page2.php");
 	} else {
