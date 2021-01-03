@@ -16,7 +16,7 @@
         if($res1 ->num_rows>0){
             while($row1 = $res1->fetch_assoc()){
                 echo "<div id ='container'>
-                <center><img id='image1' src='../images/meow-cat.jpeg'>
+                <center><img id='image1' src='".$row1['pet_image']."'>
                 <h1 id='sname'>Name : ".$row1['pet_name']."</h1>
                 <p>Gender : ".$row1['gender']."</p>
                 <p>Date of Birth : ".$row1['DOB']."</p>

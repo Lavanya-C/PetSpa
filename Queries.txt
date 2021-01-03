@@ -61,3 +61,18 @@ CREATE TABLE `shoptreat` ( `shop_id` INT(4) ,
                           CONSTRAINT PRIMARY Key(shop_id,treat_id),
 CONSTRAINT tshop_id FOREIGN KEY(shop_id) REFERENCES shops(shop_id)on delete CASCADE,
 CONSTRAINT ttreat_id FOREIGN KEY(treat_id) REFERENCES treatlist(treat_id)on delete cascade);
+
+
+SELECT S.shop_name, T.treat_name,P.pet_name,B.book_id,B.date,B.slot_time,B.price from `shops` as S ,
+ `shoptreat` as X, `treatlist` as T,`pets` as P, `booking` as B 
+ WHERE S.shop_id=B.shop_id and
+  T.treat_id=X.treat_id and
+   B.treat_id=X.treat_id and
+    P.pet_id=B.pet_id;
+
+
+SELECT S.shop_name, C.customer_id ,T.treat_name,P.pet_name,B.book_id,B.date,B.slot_time,
+B.total_price from `shops` as S , `shoptreat` as X, `treatlist` as T,`pets` as P,
+ `booking` as B, `customer` as C WHERE S.shop_id=B.shop_id and
+  T.treat_id=X.treat_id and B.treat_id=X.treat_id and
+   P.pet_id=B.pet_id and C.customer_id=B.cust_id group by book_id;

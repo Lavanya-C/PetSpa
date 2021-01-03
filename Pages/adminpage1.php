@@ -70,7 +70,7 @@ $email = $_SESSION['email'];
             
             <button id="delSpa" onclick="openForm2()" >Delete</button>
             <div class="form-popup2" id="deleteDetails">
-                <form action="deleteSpa.php" class="form-container animate" method="post">
+                <form action="deleteSpa.php" class="form-container1 animate" method="post">
                     <span class="cancel" onclick="document.getElementById('deleteDetails').style.display='none'">
                         <i class="material-icons">close</i></span><br>
                     <h2>Delete Spa</h2>
@@ -91,8 +91,8 @@ $email = $_SESSION['email'];
             <h3>Customer</h3>
             <button id ="delCust" onclick="openForm3()">Delete</button>
             <div class="form-popup3" id="deleteCust">
-                <form action="delCust.php" class="form-container animate" method="post">
-                    <span class="cancel" onclick="document.getElementById('delCust').style.display='none'">
+                <form action="delCust.php" class="form-container1 animate" method="post">
+                    <span class="cancel" onclick="document.getElementById('deleteCust').style.display='none'">
                         <i class="material-icons">close</i></span><br>
                             <h2>Delete Customer</h2>
                             <label for="cname">Customer Name</label>
@@ -112,6 +112,27 @@ $email = $_SESSION['email'];
             <h3>Pet</h3>
             
             <button id="viewPet" onclick='location.href=`viewPet.php`'>View</button>
+            </center>
+        </div>
+
+        <div id='order'>
+            <center>
+            <h3>All orders</h3>
+            
+            <button id="viewOrder" onclick='location.href=`viewAOrder.php`'>View</button>
+            </center>
+        </div>
+
+        <div id='treat'>
+            <center>
+            <h3>Treatments</h3>
+            
+            <button id="viewTreat" onclick='location.href=`viewTreat.php`'>View</button>
+            <form action="addList.php" method="post">
+            <label for="treat">Treatment Name : </label>
+            <input  id='t1' type='text' name="treat" placeholder="new treatment" required>
+            <button name="save" type="submit" value="submit">Submit</button>
+            </form>
             </center>
         </div>
 

@@ -61,6 +61,13 @@ h1{
     margin-bottom: 5px;
 }
 
-update{
-    
+#view{
+    width:150px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    outline:none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
